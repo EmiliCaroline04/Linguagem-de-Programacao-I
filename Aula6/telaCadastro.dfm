@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   Caption = 'Cadastro de Usu'#225'rio'
   ClientHeight = 527
-  ClientWidth = 856
+  ClientWidth = 868
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -20,7 +20,7 @@ object Form1: TForm1
     ParentBackground = False
     TabOrder = 0
     object pnl_fundo: TPanel
-      Left = 72
+      Left = 80
       Top = 30
       Width = 785
       Height = 465
@@ -56,7 +56,7 @@ object Form1: TForm1
         Height = 15
         Caption = 'Data de nascimento:'
       end
-      object Email: TLabel
+      object TLabel
         Left = 330
         Top = 153
         Width = 37
@@ -87,6 +87,7 @@ object Form1: TForm1
         Color = clPink
         ParentBackground = False
         TabOrder = 0
+        ExplicitLeft = 0
         object titulo: TLabel
           Left = 17
           Top = 55
@@ -636,48 +637,71 @@ object Form1: TForm1
           Stretch = True
         end
       end
-      object TEdit
+      object NomeEDT: TEdit
         Left = 328
         Top = 61
         Width = 385
         Height = 23
         TabOrder = 1
       end
-      object TEdit
-        Left = 328
-        Top = 119
-        Width = 385
-        Height = 23
-        TabOrder = 2
-      end
-      object TEdit
+      object EmailEDT: TEdit
         Left = 328
         Top = 174
         Width = 385
         Height = 23
-        TabOrder = 3
-      end
-      object TEdit
-        Left = 328
-        Top = 237
-        Width = 385
-        Height = 23
-        TabOrder = 4
-      end
-      object TComboBox
-        Left = 330
-        Top = 301
-        Width = 383
-        Height = 23
-        TabOrder = 5
+        TabOrder = 2
       end
       object StringGrid1: TStringGrid
         Left = 330
         Top = 346
         Width = 383
         Height = 111
-        TabOrder = 6
+        TabOrder = 3
+        OnClick = StringGrid1Click
       end
+      object MaskEdit1: TMaskEdit
+        Left = 330
+        Top = 301
+        Width = 327
+        Height = 23
+        TabOrder = 4
+        Text = 'MaskEdit1'
+      end
+      object tipoUsuarioEDT: TComboBox
+        Left = 328
+        Top = 301
+        Width = 383
+        Height = 23
+        TabOrder = 5
+      end
+      object ContatoMask: TMaskEdit
+        Left = 330
+        Top = 237
+        Width = 357
+        Height = 23
+        EditMask = '!\(99\)0000-0000;1;_'
+        MaxLength = 13
+        TabOrder = 6
+        Text = '(  )    -    '
+      end
+      object DataNascimentoMask: TMaskEdit
+        Left = 329
+        Top = 124
+        Width = 380
+        Height = 23
+        EditMask = '99/99/9999;1;_'
+        MaxLength = 10
+        TabOrder = 7
+        Text = '  /  /    '
+      end
+    end
+    object Button1: TButton
+      Left = 863
+      Top = 0
+      Width = 42
+      Height = 24
+      Caption = 'Salvar'
+      TabOrder = 1
     end
   end
 end

@@ -1,7 +1,4 @@
-﻿[Email]
-Coordinates=154,144,49,58
-
-[pnl_fundo]
+﻿[pnl_fundo]
 Coordinates=360,144,71,58
 
 [titulo]
@@ -29,7 +26,7 @@ Coordinates=441,144,49,58
 Coordinates=213,144,74,58
 
 []
-Coordinates=281,10,45,58
+Coordinates=154,144,49,58
 Visible=True
 
 [tipo]
